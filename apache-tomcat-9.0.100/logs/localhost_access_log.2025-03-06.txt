@@ -19,3 +19,5 @@
 36.255.87.84 - - [06/Mar/2025:09:18:08 +0000] "GET /manager/images/tomcat.svg HTTP/1.1" 200 67795
 36.255.87.84 - - [06/Mar/2025:09:18:08 +0000] "GET /manager/images/asf-logo.svg HTTP/1.1" 200 20486
 114.35.2.131 - - [06/Mar/2025:09:58:15 +0000] "GET / HTTP/1.0" 200 11212
+194.120.230.215 - - [06/Mar/2025:10:08:30 +0000] "GET /cgi-bin/luci/;stok=/locale HTTP/1.1" 404 790
+58.77.215.194 - - [06/Mar/2025:10:11:38 +0000] "POST /goform/set_LimitClient_cfg HTTP/1.1" 400 763
