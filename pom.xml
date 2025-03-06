@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- This is the root element of the POM file. It defines the project and its configuration. -->
+
+
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Specifies the POM model version. Always use 4.0.0 for modern Maven projects. -->
+
+
+
+    <groupId>com.example</groupId>
+
+    <!-- Specifies the group or organization that this project belongs to. -->
+
+
+
+    <artifactId>my-java-project</artifactId>
+
+    <!-- Specifies the name of the project or the unique identifier. -->
+
+
+
+    <version>1.0.0</version>
+
+    <!-- Specifies the version of the project. -->
+
+
+
+    <packaging>jar</packaging>
+
+    <!-- Specifies the packaging type. Common values include 'jar', 'war', 'pom', etc. -->
+
+
+
+    <name>My Java Project</name>
+
+    <!-- Specifies the human-readable name of the project. -->
+
+
+
+    <description>A simple Java project built with Maven.</description>
+
+    <!-- Provides a brief description of the project. -->
+
+
+
+    <properties>
+
+        <!-- Defines project-wide properties that can be reused in the POM. -->
+
+        <maven.compiler.source>1.8</maven.compiler.source>
+
+        <!-- Specifies the Java source version. -->
+
+        <maven.compiler.target>1.8</maven.compiler.target>
+
+        <!-- Specifies the Java target version. -->
+
+    </properties>
+
+
+
+    <dependencies>
+
+        <!-- Specifies project dependencies. This example includes a JUnit dependency. -->
+
+        <dependency>
+
+            <groupId>junit</groupId>
+
+            <artifactId>junit</artifactId>
+
+            <version>4.12</version>
+
+            <!-- Specifies the dependency's group, artifact, and version. -->
+
+            <scope>test</scope>
+
+            <!-- Specifies the scope of the dependency (e.g., 'compile', 'test', etc.). -->
+
+        </dependency>
+
+    </dependencies>
+
+
+
+    <build>
+
+        <!-- Configures the build process for the project. -->
+
+        <sourceDirectory>src/main/java</sourceDirectory>
+
+        <!-- Specifies the directory containing the main Java source code. -->
+
+        <testSourceDirectory>src/test/java</testSourceDirectory>
+
+        <!-- Specifies the directory containing test Java source code. -->
+
+
+
+        <plugins>
+
+            <!-- Specifies build plugins. This example includes the Maven Compiler Plugin. -->
+
+            <plugin>
+
+                <groupId>org.apache.maven.plugins</groupId>
+
+                <artifactId>maven-compiler-plugin</artifactId>
+
+                <version>3.8.1</version>
+
+                <!-- Specifies the version of the plugin. -->
+
+
+
+                <configuration>
+
+                    <!-- Configures plugin-specific settings. -->
+
+                    <source>${maven.compiler.source}</source>
+
+                    <!-- Configures the source version. -->
+
+                    <target>${maven.compiler.target}</target>
+
+                    <!-- Configures the target version. -->
+
+                </configuration>
+
+            </plugin>
+
+        </plugins>
+
+    </build>
+
+</project>
